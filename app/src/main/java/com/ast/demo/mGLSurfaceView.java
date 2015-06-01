@@ -38,7 +38,7 @@ class mGLSurfaceView extends GLSurfaceView
 	{
 		private final WeakReference<MainActivity> ui;
 		mHandler(MainActivity ref) {
-			this.ui = new WeakReference<>(ref);
+			this.ui = new WeakReference<MainActivity>(ref);
 		}
 		@Override
 		public void handleMessage (Message msg) {

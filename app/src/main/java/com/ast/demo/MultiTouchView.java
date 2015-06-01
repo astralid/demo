@@ -51,7 +51,7 @@ class MultiTouchView extends View implements View.OnTouchListener {
 		return true;
 	}
 
-	private HashMap<Integer, PointF> touchPoints = new HashMap<>();
+	private HashMap<Integer, PointF> touchPoints = new HashMap<Integer, PointF>();
 	private void captureDown(MotionEvent event) {
 		int index = event.getActionIndex();
 		int id = event.getPointerId(index);
